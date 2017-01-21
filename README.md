@@ -56,13 +56,11 @@ public class MyAccessbilityService extends AccessibilityService {
 
 
 
-| 方法                                       | 系统成功绑定该服务时被触发,也就是当你在设置中开启相应的服务,系统成功的绑定了该服务时会触发,通常我们可以在这里做一些初始化操作 | 描述                                       |
+| 方法                                       | 作用                                       | 描述                                       |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | onServiceConnected()                     | 系统成功绑定该服务时被触发,也就是当你在设置中开启相应的服务,系统成功的绑定了该服务时会触发,通常我们可以在这里做一些初始化操作 | 手机设置里面->辅助功能在这里面找到你自己实现的辅助类。启动自己的服务类时会触发该回调方法。 |
 | onAccessibilityEvent(AccessibilityEvent event) | 有关AccessibilityEvent事件的回调函数.系统通过sendAccessibiliyEvent()不断的发送AccessibilityEvent到此处 | 当屏幕有变化或者是相关监听事件发生时触发该回调方法。               |
-| findFoucs(int falg)                      | 查找拥有特定焦点类型的控件                            |                                          |
-| disableSelf()                            | 禁用当前服务,也就是在服务可以通过该方法停止运行                 |                                          |
-| getRootInActiveWindow()                  | 如果配置能够获取窗口内容,则会返回当前活动窗口的根结点              |                                          |
+| findFoucs(int falg)                      | 禁用当前服务,也就是在服务可以通过该方法停止运行                 | getRootInActiveWindow()                  |
 | getSeviceInfo()                          | 获取当前服务的配置信息                              |                                          |
 
 2. 声明服务
